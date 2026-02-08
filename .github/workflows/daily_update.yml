@@ -1,13 +1,14 @@
-name: Daily Auto-Update (Keep Alive)
+name: Daily Auto-Update Keep Alive
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
-  workflow_dispatch: # Allows manual run
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
@@ -15,15 +16,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Update Invisible Timestamp
+      - name: Remove Old Timestamp
         run: |
-          # 1. Delete old timestamp (Using double quotes to fix error)
-          sed -i "/" >> README.md
+          sed -i '/AUTO_TIMESTAMP/d' README.md
 
-      - name: Commit & Push Changes
+      - name: Add New Timestamp
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          echo "<!-- AUTO_TIMESTAMP $(date -u) -->" >> README.md
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Auto-update: Daily Keep-Alive 🟢" || exit 0
+          git commit -m "Auto update keep alive" || exit 0
           git push
