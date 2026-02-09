@@ -87,7 +87,7 @@ git clone https://github.com/trmxvibs/ip-tracker
 cd ip-tracker
 python3 chakravyuh.py
 ```
-###[WINDOWS
+### WINDOWS
 
 Download and install Python 3.x (check “Add to PATH”).
 
